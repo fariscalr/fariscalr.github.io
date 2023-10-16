@@ -1,19 +1,84 @@
-<HTML>
-<HEAD>
-<TITLE>Home</TITLE>
-</HEAD>
-<BODY>
-<pre>
-<hr color="blue" size=3 width=50% align="left"><font size= 4 color="red">
-<a href="index.html">Home</a>  |  <a href="profile.html">Profil</a>  |  <a href="about.html">About</a>  |  <a href="galery.html">Gallery</a>  |  <a href="kontak.html">Kontak</a></font>
-<hr color="blue" size=3 width=50% align="left">
-<font size=3>Assalammualaikum.Wr.Wb.
-Apakabar semua. Salam kenal ini adalah web perdanaku. Web ini berisi informasi 
-tentang kegemaranku. <br>Semoga web ini dapat menginspirasi Anda pada 
-waktu liburan. <a href="http://www.google.com">google</a>
-Silakan hubungi saya jika ada yang ingin didiskusikan <a 
-href="mailto:endarnirmala.gmail.com">email</a>
-</font>
-</pre>
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Free Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container">
+    <h1 style="color: rgb(174, 96, 247); text-align: center">Free Registration</h1><br><br>
+    <form>
+      <div class="row mb-3">
+        <label for="nama" class="col-sm-1 col-form-label">Nama </label>:
+        <div class="col-sm-3">
+          <input type="text" class="form-control" id="nama" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="tanggallahir" class="col-sm-1 col-form-label">Tgl Lahir </label>:
+        <div class="col-sm-1">
+          <input type="day" class="form-control" id="tanggallahir" />
+        </div>
+        /
+        <div class="col-sm-1">
+          <input type="day" class="form-control" id="tanggallahir" />
+        </div>
+        /
+        <div class="col-sm-2">
+          <input type="day" class="form-control" id="tanggallahir" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="alamat" class="col-sm-1 col-form-label">Alamat</label>:
+        <div class="col-sm-5">
+          <textarea class="form-control" id="alamat" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="nama" class="col-sm-1 col-form-label">Kota </label>:
+        <div class="col-sm-3">
+          <input type="text" class="form-control" id="nama" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="nama" class="col-sm-1 col-form-label">Pekerjaan </label>:&nbsp;&nbsp;&nbsp;
+      <select class="form-select form-select-sm" aria-label="Small select example" style="width: 200px;">
+        <option value="1">Tani</option>
+        <option value="2">Polisi</option>
+        <option value="3">TNI</option>
+      </select>
+      </div>
+      <div class="row mb-3">
+        <label for="nama" class="col-sm-1 col-form-label">Pekerjaan</label>:
+        <div class="col-sm-3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">Laki - Laki&nbsp;&nbsp;&nbsp;
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">Perempuan
+              </label>
+        </div>
+    </div>
+    <div class="row mb-3">
+      <label for="nama" class="col-sm-1 col-form-label">Hobby</label>:
+      <div class="col-sm-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">Reading</label>
+        <br> 
+        <input class="form-check-input" type="checkbox" id="hobbyCheckbox2">
+        <label class="form-check-label" for="hobbyCheckbox2">Sport</label>
+        <br> 
+        <input class="form-check-input" type="checkbox" id="hobbyCheckbox2">
+        <label class="form-check-label" for="hobbyCheckbox2">Singing</label>
+        <br> 
+        <input class="form-check-input" type="checkbox" id="hobbyCheckbox2">
+        <label class="form-check-label" for="hobbyCheckbox2">Traveling</label><br><br>
+        <button type="submit" class="btn btn-primary">Kirim</button> <button type="cancel" class="btn btn-primary">Cancel</button>
+      </div>
+      </div>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
