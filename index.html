@@ -3,82 +3,114 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    </style>
     <title>Form Free Registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   </head>
   <body>
-    <div class="container">
-    <h1 style="color: rgb(174, 96, 247); text-align: center">Free Registration</h1><br><br>
-    <form>
-      <div class="row mb-3">
-        <label for="nama" class="col-sm-1 col-form-label">Nama </label>:
-        <div class="col-sm-3">
-          <input type="text" class="form-control" id="nama" />
+    <section class="h-100 bg-dark">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card card-registration my-4">
+                <div class="row g-0">
+                  <div class="col-xl-6 d-none d-xl-block">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                      alt="Sample photo" class="img-fluid"
+                      style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-5 text-uppercase" style="color: rgb(174, 96, 247); text-align: center">Free Registration</h3>
+      
+                      <form>
+                        <div class="row mb-3">
+                          <label for="nama" class="col-sm-3 col-form-label">Nama </label>:
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control" id="nama" />
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="tanggallahir" class="col-sm-3 col-form-label">Tgl Lahir </label>:
+                          <div class="col-sm-2">
+                            <input type="day" class="form-control" id="tanggallahir" />
+                          </div>
+                          /
+                          <div class="col-sm-2">
+                            <input type="day" class="form-control" id="tanggallahir" />
+                          </div>
+                          /
+                          <div class="col-sm-3">
+                            <input type="day" class="form-control" id="tanggallahir" />
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="alamat" class="col-sm-3 col-form-label">Alamat</label>:
+                          <div class="col-sm-6">
+                            <textarea class="form-control" id="alamat" rows="4"></textarea>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="nama" class="col-sm-3 col-form-label">Kota </label>:
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control" id="nama" />
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="nama" class="col-sm-3 col-form-label">Pekerjaan </label>:&nbsp;&nbsp;&nbsp;
+                        <select class="form-select form-select-sm" aria-label="Small select example" style="width: 200px;">
+                          <option value="1">Tani</option>
+                          <option value="2">Polisi</option>
+                          <option value="3">TNI</option>
+                        </select>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="nama" class="col-sm-3 col-form-label">Jenis Kelamin</label>:
+                          <div class="col-sm-5">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                              <label class="form-check-label" for="radio">Laki - Laki&nbsp;&nbsp;&nbsp;
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                              <label class="form-check-label" for="radio">Perempuan
+                                </label>
+                          </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="nama" class="col-sm-3 col-form-label">Hobby</label>:
+                        <div class="col-sm-5">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">Reading</label>
+                          <br> 
+                          <input class="form-check-input" type="checkbox" id="hobbyCheckbox2">
+                          <label class="form-check-label" for="hobbyCheckbox2">Sport</label>
+                          <br> 
+                          <input class="form-check-input" type="checkbox" id="hobbyCheckbox2">
+                          <label class="form-check-label" for="hobbyCheckbox2">Singing</label>
+                          <br> 
+                          <input class="form-check-input" type="checkbox" id="hobbyCheckbox2">
+                          <label class="form-check-label" for="hobbyCheckbox2">Traveling</label><br><br>
+                          <button type="submit" class="btn btn-primary btn-lg ms-1">Kirim</button> <button type="cancel" class="btn btn-light btn-lg">Cancel</button>
+                        </div>
+                        </div>
+                      </form>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row mb-3">
-        <label for="tanggallahir" class="col-sm-1 col-form-label">Tgl Lahir </label>:
-        <div class="col-sm-1">
-          <input type="day" class="form-control" id="tanggallahir" />
-        </div>
-        /
-        <div class="col-sm-1">
-          <input type="day" class="form-control" id="tanggallahir" />
-        </div>
-        /
-        <div class="col-sm-2">
-          <input type="day" class="form-control" id="tanggallahir" />
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label for="alamat" class="col-sm-1 col-form-label">Alamat</label>:
-        <div class="col-sm-5">
-          <textarea class="form-control" id="alamat" rows="4"></textarea>
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label for="nama" class="col-sm-1 col-form-label">Kota </label>:
-        <div class="col-sm-3">
-          <input type="text" class="form-control" id="nama" />
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label for="nama" class="col-sm-1 col-form-label">Pekerjaan </label>:&nbsp;&nbsp;&nbsp;
-      <select class="form-select form-select-sm" aria-label="Small select example" style="width: 200px;">
-        <option value="1">Tani</option>
-        <option value="2">Polisi</option>
-        <option value="3">TNI</option>
-      </select>
-      </div>
-      <div class="row mb-3">
-        <label for="nama" class="col-sm-1 col-form-label">Pekerjaan</label>:
-        <div class="col-sm-3">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-            <label class="form-check-label" for="flexRadioDefault1">Laki - Laki&nbsp;&nbsp;&nbsp;
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-            <label class="form-check-label" for="flexRadioDefault1">Perempuan
-              </label>
-        </div>
-    </div>
-    <div class="row mb-3">
-      <label for="nama" class="col-sm-1 col-form-label">Hobby</label>:
-      <div class="col-sm-3">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">Reading</label>
-        <br> 
-        <input class="form-check-input" type="checkbox" id="hobbyCheckbox2">
-        <label class="form-check-label" for="hobbyCheckbox2">Sport</label>
-        <br> 
-        <input class="form-check-input" type="checkbox" id="hobbyCheckbox2">
-        <label class="form-check-label" for="hobbyCheckbox2">Singing</label>
-        <br> 
-        <input class="form-check-input" type="checkbox" id="hobbyCheckbox2">
-        <label class="form-check-label" for="hobbyCheckbox2">Traveling</label><br><br>
-        <button type="submit" class="btn btn-primary">Kirim</button> <button type="cancel" class="btn btn-primary">Cancel</button>
-      </div>
-      </div>
-    </form>
-    </div>
+      </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
